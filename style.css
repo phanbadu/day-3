@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,700&family=Roboto&display=swap');
+
+:root {
+    --main-color: #fd4646;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background: linear-gradient(to right, #362636, #ee7a45);
+}
+
+.product {
+    max-width: 740px;
+    width: 100%;
+    height: 1080px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 15%;
+}
+
+.cart {
+    width: 250px;
+    height: 410px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    overflow: hidden;
+    background: linear-gradient(to right, #cde0cf, #80f7f7);
+    box-shadow: 0 0 2px  black;
+}
+
+.cart:hover {
+    padding: 6px;
+    transition: 0.2s;
+    border: 1px solid black;
+}
+
+.cart:hover .cart-img {
+    border-radius: 5px;
+}
+
+.cart-img {
+    width: 100%;
+    height: 250px;
+    background-image: url(rog.jpg);
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.cart-heading {
+    padding-top: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.cart-information {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    line-height: 20px;
+}
+
+.cart-bass {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-price {
+    color: var(--main-color);
+    line-height: 30px;
+}   
+
+.cart-buy {
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: linear-gradient(to right, #19bb29, #cedb80);
+    border-radius: 5px;
+    color: black;
+}
+
+.bill {
+    width: auto;
+    height: 10px;
+    color: #fd4646;
+}
+
+.cart-buy:hover {
+    background: linear-gradient(to right, var(--main-color), #8f2727);
+    color: white;
+}
+
+.cart-buy:hover .bill {
+    fill: #fff;
+}
+
+.product-information {
+    width: 80%;
+    height: 50px;
+    background: linear-gradient(to right, #4cb153, #b4549f);
+    margin: 9px auto;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    color: #130813;
+}
+
+.product-information:hover {
+    background: linear-gradient(to right, var(--main-color), #8f2727);
+}
+
+/* modal */
+
+.product-information {
+
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.modal__inner {
+    height: 1000px;
+    width: 600px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: auto;
+    background-color: white;
+    padding: 1%;
+    border-radius: 5px;
+}
+
+.modal__header-img {
+    background-image: url(rog.jpg);
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    width: 98%;
+    height: 500px;
+    border-radius: 5px;
+}
+
+.close {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.close:hover {
+    background-color: var(--main-color);
+}
+
+.close-modal {
+    fill: rgb(10, 10, 10);
+}
+
+.modal__body {
+    margin-top: 10px;
+}
+
+.modal__body span {
+    word-break: break-all;
+}
+
+.modal__footer {
+    margin-top: 50px;
+    width: 100%;
+    height: 50px;
+}
+
+.button {
+    width: 100px;
+    height: 50px;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    margin: auto;
+    border-radius: 5px;
+    background: linear-gradient(to right, #8f2727 , #977878);
+}
+
+.button:hover {
+    cursor: pointer;
+    background: linear-gradient(to right, var(--main-color), #dd7878);
+}
+
+.hide {
+    display: none;
+}
+
+@media (max-width: 739px) {
+    .modal__inner {
+        height: 800px;
+        width: 300px;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        margin: auto;
+        background-color: white;
+        padding: 1%;
+        border-radius: 5px;
+    }
+    .modal__header-img {
+        background-image: url(rog.jpg);
+        background-position: center;
+        background-size: cover;
+        object-fit: cover;
+        width: 98%;
+        height: 290px;
+        border-radius: 5px;
+    }
+    .modal__body span  {
+        font-size: 11px;
+    }
+    .close {
+        top: 3px;
+        right: 3px;
+    }
+    .modal__footer {
+        margin-top: 20px;
+    }
+}
