@@ -1,7 +1,7 @@
 var btnOpen = document.querySelector('.product-information')
 var modal = document.querySelector('.modal')
 var iconClose = document.querySelector('.close')
-var btnClose = document.querySelector('.button')
+var btnClose = document.querySelector('.button-close')
 
 function click(e) {
     modal.classList.toggle('hide')
